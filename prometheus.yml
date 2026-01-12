@@ -1,0 +1,24 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'coursebot-monitor'
+
+scrape_configs:
+  - job_name: 'coursebot'
+    static_configs:
+      - targets: ['localhost:8000']
+        labels:
+          service: 'telegram-bot'
+          
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+
+rule_files:
+  - 'alerts.yml'
