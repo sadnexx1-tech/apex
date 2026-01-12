@@ -22,7 +22,7 @@ load_dotenv()
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 YOOKASSA_SHOP_ID = os.getenv('YOOKASSA_SHOP_ID')
 YOOKASSA_SECRET_KEY = os.getenv('YOOKASSA_SECRET_KEY')
-CHANNEL_ID = '@your_channel_name'  # ← ЗАМЕНИ НА СВОЙ КАНАЛ
+CHANNEL_ID = '@sadnexx_true'  # ← ЗАМЕНИ НА СВОЙ КАНАЛ
 ADMIN_ID = int(os.getenv('ADMIN_ID', '0'))  # Для админ панели
 
 # YooKassa конфигурация
