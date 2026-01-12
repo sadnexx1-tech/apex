@@ -16,7 +16,7 @@ dp = Dispatcher(storage=MemoryStorage())
 Configuration.account_id = os.getenv('YOOKASSA_SHOP_ID')
 Configuration.secret_key = os.getenv('YOOKASSA_SECRET_KEY')
 
-CHANNEL_ID = os.getenv('CHANNEL_ID', '@yourchannel')
+CHANNEL_ID = '@sadnexx_true'
 SUBS_FILE = 'subscriptions.json'
 
 courses = {
